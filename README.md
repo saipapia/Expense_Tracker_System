@@ -1,9 +1,7 @@
 # 🧾 Expense Tracker
 
 This **Expense Tracker** helps you manage daily expenses with ease. Built with **FastAPI** (Backend), **Streamlit** (Frontend), and **MySQL** as the database.
-![Expense Tracker System UI](frontend/UI1.png)
-![Expense Tracker UI](frontend/UI3.png)
-![Expense Tracker UI](frontend/UI4.png)
+![Expense Tracker UI](https://raw.githubusercontent.com/saipapia/expense_tracker/main/frontend/UI1.png)
 
 ---
 
