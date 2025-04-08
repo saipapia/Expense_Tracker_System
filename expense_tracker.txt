@@ -1,0 +1,30 @@
+CREATE DATABASE expense_tracker;
+USE expense_tracker;
+
+CREATE TABLE IF NOT EXISTS expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    payment_method VARCHAR(50) NOT NULL,
+    description VARCHAR(255)
+);
+
+-- Insert Dummy Data
+INSERT INTO expenses (date, category, amount, payment_method, description) VALUES
+('2025-03-01', 'Food', 300, 'Cash', 'Groceries'),
+('2025-03-02', 'Transport', 150, 'UPI', 'Cab Fare'),
+('2025-03-03', 'Entertainment', 500, 'Credit Card', 'Movie Tickets'),
+('2025-03-05', 'Shopping', 1000, 'Debit Card', 'Clothes Shopping'),
+('2025-03-10', 'Utilities', 800, 'Net Banking', 'Electricity Bill'),
+('2025-03-12', 'Healthcare', 1200, 'Cash', 'Doctor Consultation'),
+('2025-03-15', 'Education', 2000, 'UPI', 'Online Course'),
+('2025-03-18', 'Food', 450, 'Cash', 'Restaurant Bill'),
+('2025-03-20', 'Shopping', 700, 'Credit Card', 'Gadgets'),
+('2025-03-25', 'Transport', 200, 'Debit Card', 'Petrol'),
+('2025-03-27', 'Entertainment', 600, 'Cash', 'Amusement Park'),
+('2025-03-28', 'Utilities', 900, 'Net Banking', 'Internet Bill'),
+('2025-03-30', 'Healthcare', 500, 'UPI', 'Medicine'),
+('2025-03-31', 'Education', 1000, 'Debit Card', 'Books');
+
+select * from expenses;
